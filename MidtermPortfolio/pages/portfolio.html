@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <script src="./../js/include.js"></script>
+    <script src="./../js/hamburger.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div w3-include-html="./../nav.html"></div>
+        <!-- https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+        <div class="topnav">
+            <a href="#home" class="active">Logo Placeholder</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+              <a href="#first_work">First Work</a>
+              <a href="#second_work">Second Work</a>
+              <a href="#third_work">Third Work</a>
+              <a href="./pages/digitalart.html">Digital Art</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="content">
+            Insert Content here
+            <a id="first_work">first_work</a>
+            <a id="second_work">second_work</a>
+            <a id="third_work">third_work</a>
+        </div>
+        <div w3-include-html="./../footer.html"></div>
+        <script>includeHTML();</script>
+    </body>
+</html>

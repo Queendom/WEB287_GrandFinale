@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <script src="./../js/include.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./../css/style.css">
+    </head>
+    <body>
+        <div w3-include-html="./../nav.html"></div>
+        <script>includeHTML();</script>
+        <!-- Source: https://stackoverflow.com/questions/1244788/embed-vs-object -->
+        <object style="height: 100%; width: 100%;" id="resume" data="./../documents/resume_draft.pdf" type="application/pdf">
+            <embed src="./../documents/resume_draft.pdf" type="application/pdf" />
+        </object>   
+    </body>
+</html>
